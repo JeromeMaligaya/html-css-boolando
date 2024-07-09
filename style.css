@@ -18,8 +18,12 @@ header{
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1;
 }
 
+main{
+    padding: 50px 0;
+}
 /*utilities*/
 .container{
     max-width: 1200px;
@@ -33,11 +37,50 @@ header{
     align-items: center;
 }
 
+.flex-wrap{
+    flex-wrap: wrap;
+}
+/*utilities-font-seize*/
+.font-sz-s{
+    font-size: 12px;
+}
+
+.font-sz-m{
+    font-size: 18px;
+}
+
+.font-sz-l{
+    font-size: 24px;
+}
+
+.font-sz-xl{
+    font-size: 30px;
+}
+
 /*utilities-color*/
 .clr-white{
     color: #fff;
 }
 
+.clr-red{
+    color: red;
+}
+
+.clr-black{
+    color: black;
+}
+
+.bg-red{
+    background-color: red;
+}
+
+.bg-green{
+    background-color: green;
+}
+
+.bg-white{
+    background-color: #fff;
+}
 /*utilities-text*/
 .txt-center{
     text-align: center;
@@ -45,6 +88,10 @@ header{
 
 .underline-none{
     text-decoration: none;
+}
+
+.line-through{
+    text-decoration: line-through;
 }
 
 /*header-nav*/
@@ -62,6 +109,7 @@ header{
 /*header-adress-box*/
 .hdr-a-row{
     gap: 10px;
+    justify-content: flex-start;
 }
 
 /*header-logo*/
@@ -77,4 +125,85 @@ header{
 #hdr-i-row{
     flex-basis: 20%;
     gap: 15px;
+    justify-content: flex-end;
 }
+
+/*main*/
+.row{
+    gap: 20px;
+    width: 100%;
+}
+
+.col{
+    width: calc((100%/3) - (40px/3));
+    
+}
+.card{
+    position: relative;
+}
+.img-cont{
+    min-height: 565px;
+}
+.img-def, .img-hover{
+    position: absolute;
+    width: 385px;
+}
+
+.img-def{
+    opacity: 1;
+}
+
+.img-hover{
+    opacity: 0;
+}
+.img-cont:hover .img-def{
+    opacity: 0;
+}
+
+.img-cont:hover .img-hover{
+    opacity: 1;
+}
+
+/*main-text-product*/
+.brand{
+    padding-bottom: 5px;
+}
+
+.price{
+    text-decoration: line-through;
+}
+
+.row-small-box{
+    height: 18px;
+    line-height: 100%;
+    gap: 5px;
+    position: absolute;
+    left: 0;
+    top: 510px;
+}
+
+.disc-box{
+    max-width: 50px;
+}
+
+.sost-box{
+    max-width: 90px;
+}
+
+.disc-box, .sost-box{
+    height: 18px;
+    vertical-align: middle;
+    padding: 0 10px;
+}
+
+.fav-box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-color: transparent;
+}
+
+
+
